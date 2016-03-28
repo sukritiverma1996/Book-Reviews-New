@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundimage"
+    android:background="@drawable/book"
     android:orientation="vertical"
     android:layout_marginTop="50dp"
     >
@@ -13,25 +13,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="1.5"
-            android:textSize="25dp"
-            android:layout_margin="10dp"
-            android:text="Search By : "/>
+            android:textSize="20dp"
+            android:text="Search: "
+            android:textColor="@color/colorAccent"/>
 
         <RadioGroup
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:layout_margin="10dp">
+            android:textColor="@color/colorAccent">
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="By Genre"
                 android:text="By Genre"
+                android:textColor="@color/colorAccent"
                 android:textSize="20dp"
                 android:id="@+id/genreRadioButton"/>
 
@@ -40,6 +40,7 @@
                 android:layout_height="wrap_content"
                 android:text="By title"
                 android:textSize="20dp"
+                android:textColor="@color/colorAccent"
                 android:id="@+id/titleRadioButton"/>
 
         </RadioGroup>
@@ -47,10 +48,11 @@
     </LinearLayout>
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:hint="Search By"
         android:textAlignment="center"
+        android:textColor="@color/colorAccent"
         android:id="@+id/searchQueryEditText"
 
         android:layout_marginTop="40dp"/>
@@ -59,8 +61,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="20dp"
-        android:id="@+id/submitButton"
-        android:layout_gravity="center_horizontal" />
+        android:id="@+id/submitButton" />
 
 </LinearLayout>

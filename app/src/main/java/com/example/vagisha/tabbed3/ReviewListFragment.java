@@ -46,6 +46,7 @@ public class ReviewListFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 searchQuery.setVisibility(View.VISIBLE);
+                searchQuery.setText("");
                 submitButton.setVisibility(View.VISIBLE);
             }
         });
@@ -54,6 +55,7 @@ public class ReviewListFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 searchQuery.setVisibility(View.VISIBLE);
+                searchQuery.setText("");
                 submitButton.setVisibility(View.VISIBLE);
             }
         });

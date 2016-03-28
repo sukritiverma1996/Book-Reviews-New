@@ -31,7 +31,7 @@ public class GenreActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_genre);
-
+        setTitle("Books by genre");
         genreLV = (ListView) findViewById(R.id.genreListView);
         final String genreName = getIntent().getStringExtra("genreName");
         Retrofit retrofit2 = new Retrofit.Builder()
